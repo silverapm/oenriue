@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+@import "../css/bootstrap.css";
+@import "../css/bootstrap-grid.css";
+@import "../css/bootstrap-reboot.css";
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #dedede;
+}
+
+header .nav-item {
+  font: 16px 'Asap';
+  font-weight: 400;
+  color: #4d4d4d;
+  text-transform: uppercase;
+  margin-left: 40px;
+}
+
+header .nav-item a:after {
+  display: block;
+  content: '';
+  background-color: transparent;
+  width: 50%;
+  height: 2px;
+  transition: 0.3s;
+  margin-top: 9px;
+}
+
+header .nav-item a:hover:after {
+  background-color: #878787;
+  width: 100%;
+}
+
+.imageBgTitle {
+  z-index: 1;
+}
+
+.navbar {
+  z-index: 2;
+}
+
+.card-img-overlay h1 {
+  font: 90px 'Asap';
+  font-weight: 500;
+  color: #4d4d4d;
+  margin-bottom: 15px;
+}
+
+.card-img-overlay h2 {
+  font: 22px 'Asap';
+  font-weight: 500;
+  color: #4d4d4d;
+  opacity: 54%;
+}
+
+.card-img-overlay {
+  top: 30%;
+}
+
+.btn-outline-secondary {
+  width: 160px;
+  height: 50px;
+  border-radius: 0!important;
+  text-transform: uppercase;
+  font: 16px 'Asap';
+  color: #4d4d4d;
+  margin-top: 33px;
+}
+
+.btn1 {
+  background-color: white;
+  color: #4d4d4d;
+  font: 16px 'Asap';
+  border: none;
+  margin-right: 20px;
+  box-shadow: 0 20px 40px 2px #C2C2C2;
+}
+
+.btn2 {
+  background-color: transparent;
+}
+
+.knowAboutMe p {
+  font: 16px/26px 'Asap';
+  font-weight: 400;
+  color: #4d4d4d;
+  span {
+    font: 46px 'Asap';
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
+
+.knowAboutMe .container {
+  padding-top: 109px;
+  padding-bottom: 124px;
+}
+
+.aboutmepar {
+  padding-top: 50px;
+  padding-right: 130px;
+}
+
+.knowAboutMe p span:before {
+  display: block;
+  content: '';
+  background-color: #7a7a7a;
+  width: 60px;
+  height: 4px;
+  margin-bottom: 15px;
+  margin-left: 3px;
+}
+
+.knowAboutMe button{
+  width: 245px;
+  margin: 0;
+}
