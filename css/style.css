@@ -120,4 +120,71 @@ h2:before {
   height: 4px;
   margin-bottom: 15px; }
 
+.skills {
+  padding-bottom: 125px;
+  padding-top: 110px; }
+  .skills h2 {
+    margin-bottom: 61px; }
+
+.portfolio {
+  padding-bottom: 125px;
+  padding-top: 120px;
+  background-color: #f6f6f6; }
+  .portfolio h2 {
+    margin-bottom: 61px; }
+  .portfolio img {
+    margin-bottom: 30px; }
+  .portfolio button {
+    width: 190px; }
+  .portfolio .imgshadow {
+    box-shadow: 0 20px 40px 2px #C2C2C2; }
+
+.testimonials {
+  padding-bottom: 120px;
+  padding-top: 125px; }
+  .testimonials h2 {
+    margin-bottom: 58px; }
+
+.carousel.pointer-event {
+  max-width: 955px;
+  margin: auto; }
+
+.carousel-item {
+  padding: 85px 70px 100px 120px;
+  border: solid 1px #212121; }
+  .carousel-item h3 {
+    color: #212121;
+    font: 30px/30px 'Asap';
+    font-weight: 500;
+    text-transform: uppercase;
+    opacity: 0.9;
+    margin: 0; }
+  .carousel-item img {
+    width: 160px;
+    height: 160px; }
+  .carousel-item p {
+    color: #212121;
+    font: 16px/26px 'Asap';
+    font-weight: 400;
+    text-transform: uppercase;
+    opacity: 0.6; }
+    .carousel-item p span {
+      font: 12px 'Asap';
+      font-weight: 500;
+      opacity: 0.9; }
+
+.carousel-item.active, .carousel-item-next, .carousel-item-prev {
+  display: flex; }
+
+.carousel-indicators li {
+  width: 13px;
+  height: 13px;
+  background-color: transparent;
+  border: solid 1px black;
+  opacity: 1;
+  margin-right: 0; }
+
+.carousel-indicators .active {
+  background-color: black; }
+
 /*# sourceMappingURL=style.css.map */
