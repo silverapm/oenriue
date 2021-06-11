@@ -4,6 +4,12 @@
 @import "../css/bootstrap-grid.css";
 @import "../css/bootstrap-reboot.css";
 
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +17,16 @@
 
 header {
   background-color: #dedede;
+  height: auto;
+  @include max-screen(992px) {
+    height: 460px;
+  }
+  @include max-screen(768px) {
+    height: 370px;
+  }
+  @include max-screen(576px) {
+    height: 260px;
+  }
 }
 
 header .nav-item {
@@ -41,19 +57,49 @@ header .nav-item a:hover:after {
   z-index: 1;
 }
 
+.ml-auto, .mx-auto{
+  text-align: right;
+}
+
 .navbar {
   z-index: 2;
+  max-width: 1110px;
+  width: 100%;
+  @include max-screen(1199px) {
+    width: 940px;
+  }
+  @include max-screen(992px) {
+    width: 690px;
+  }
+  @include max-screen(768px) {
+    width: 515px;
+  }
+  @include max-screen(576px) {
+    width: 95%;
+  }
 }
 
 .card-img-overlay h1 {
   font: 90px 'Asap';
   font-weight: 500;
+  @include max-screen(768px) {
+    font: 60px 'Asap';
+  }
+  @include max-screen(576px) {
+    font: 30px 'Asap';
+  }
   color: #4d4d4d;
   margin-bottom: 15px;
 }
 
 .card-img-overlay h2 {
   font: 22px 'Asap';
+  @include max-screen(768px) {
+    font: 18px 'Asap';
+  }
+  @include max-screen(576px) {
+    font: 14px 'Asap';
+  }
   font-weight: 500;
   color: #4d4d4d;
   opacity: 54%;
@@ -72,6 +118,11 @@ header .nav-item a:hover:after {
   font-weight: 500;
   color: #4d4d4d;
   margin-top: 33px;
+  @include max-screen(576px) {
+    margin-top: 10px;
+    width: 120px;
+    height: 30px;
+  }
 }
 
 .btn1 {
@@ -112,9 +163,16 @@ h2 {
   margin-left: 3px;
 }
 
+header h2:before {
+  background-color: transparent;
+}
+
 .knowAboutMe button{
   width: 245px;
   margin: 0;
+  @include max-screen(1199px) {
+    margin-bottom: 30px;
+  }
 }
 
 .services {
@@ -188,6 +246,12 @@ h2:before {
 
 .carousel-item {
   padding: 85px 70px 100px 120px;
+  @include max-screen(992px) {
+    padding: 40px 30px 50px 30px;
+  }
+  @include max-screen(768px) {
+    padding: 10px 10px 50px 10px;
+  }
   border: solid 1px #212121;
   h3 {
     color: #212121;
@@ -196,10 +260,23 @@ h2:before {
     text-transform: uppercase;
     opacity: 0.9;
     margin: 0;
+    @include max-screen(768px) {
+      font: 20px/20px 'Asap';
+      text-transform: capitalize;
+    }
   }
   img {
     width: 160px;
     height: 160px;
+
+    @include max-screen(488px) {
+      width: 110px;
+      height: 110px;
+    }
+    @include max-screen(384px) {
+      width: 80px;
+      height: 80px;
+    }
   }
   p {
     color: #212121;
@@ -207,6 +284,19 @@ h2:before {
     font-weight: 400;
     text-transform: uppercase;
     opacity: 0.6;
+    @include max-screen(768px) {
+      font: 12px/20px 'Asap';
+      text-transform: none;
+      padding-right: 175px;
+    }
+    @include max-screen(488px) {
+      padding-right: 120px;
+    }
+    @include max-screen(384px) {
+      font: 10px/18px 'Asap';
+      text-transform: none;
+      padding-right: 100px;
+    }
     span {
       font: 12px 'Asap';
       font-weight: 500;
@@ -263,8 +353,11 @@ h2:before {
 }
 
 footer {
-  padding-top: 40px;
+  padding-top: 100px;
   background-image: url("../images/footerbg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #646465;
   h2 {
     color: white;
@@ -329,6 +422,9 @@ footer {
     color: #212121;
     opacity: 0.8;
     margin-top: 6px;
+  }
+  @include max-screen(1199px) {
+    margin-bottom: 9px;
   }
 }
 

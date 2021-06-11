@@ -8,7 +8,17 @@
   padding: 0; }
 
 header {
-  background-color: #dedede; }
+  background-color: #dedede;
+  height: auto; }
+  @media screen and (max-width: 992px) {
+    header {
+      height: 460px; } }
+  @media screen and (max-width: 768px) {
+    header {
+      height: 370px; } }
+  @media screen and (max-width: 576px) {
+    header {
+      height: 260px; } }
 
 header .nav-item {
   font: 16px 'Asap';
@@ -34,20 +44,49 @@ header .nav-item a:hover:after {
 .imageBgTitle {
   z-index: 1; }
 
+.ml-auto, .mx-auto {
+  text-align: right; }
+
 .navbar {
-  z-index: 2; }
+  z-index: 2;
+  max-width: 1110px;
+  width: 100%; }
+  @media screen and (max-width: 1199px) {
+    .navbar {
+      width: 940px; } }
+  @media screen and (max-width: 992px) {
+    .navbar {
+      width: 690px; } }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      width: 515px; } }
+  @media screen and (max-width: 576px) {
+    .navbar {
+      width: 95%; } }
 
 .card-img-overlay h1 {
   font: 90px 'Asap';
   font-weight: 500;
   color: #4d4d4d;
   margin-bottom: 15px; }
+  @media screen and (max-width: 768px) {
+    .card-img-overlay h1 {
+      font: 60px 'Asap'; } }
+  @media screen and (max-width: 576px) {
+    .card-img-overlay h1 {
+      font: 30px 'Asap'; } }
 
 .card-img-overlay h2 {
   font: 22px 'Asap';
   font-weight: 500;
   color: #4d4d4d;
   opacity: 54%; }
+  @media screen and (max-width: 768px) {
+    .card-img-overlay h2 {
+      font: 18px 'Asap'; } }
+  @media screen and (max-width: 576px) {
+    .card-img-overlay h2 {
+      font: 14px 'Asap'; } }
 
 .card-img-overlay {
   top: 30%; }
@@ -61,6 +100,11 @@ header .nav-item a:hover:after {
   font-weight: 500;
   color: #4d4d4d;
   margin-top: 33px; }
+  @media screen and (max-width: 576px) {
+    .btn-outline-secondary {
+      margin-top: 10px;
+      width: 120px;
+      height: 30px; } }
 
 .btn1 {
   background-color: white;
@@ -93,9 +137,15 @@ h2 {
 .knowAboutMe h2:before {
   margin-left: 3px; }
 
+header h2:before {
+  background-color: transparent; }
+
 .knowAboutMe button {
   width: 245px;
   margin: 0; }
+  @media screen and (max-width: 1199px) {
+    .knowAboutMe button {
+      margin-bottom: 30px; } }
 
 .services {
   background-color: #f6f6f6;
@@ -155,6 +205,12 @@ h2:before {
 .carousel-item {
   padding: 85px 70px 100px 120px;
   border: solid 1px #212121; }
+  @media screen and (max-width: 992px) {
+    .carousel-item {
+      padding: 40px 30px 50px 30px; } }
+  @media screen and (max-width: 768px) {
+    .carousel-item {
+      padding: 10px 10px 50px 10px; } }
   .carousel-item h3 {
     color: #212121;
     font: 30px/30px 'Asap';
@@ -162,15 +218,40 @@ h2:before {
     text-transform: uppercase;
     opacity: 0.9;
     margin: 0; }
+    @media screen and (max-width: 768px) {
+      .carousel-item h3 {
+        font: 20px/20px 'Asap';
+        text-transform: capitalize; } }
   .carousel-item img {
     width: 160px;
     height: 160px; }
+    @media screen and (max-width: 488px) {
+      .carousel-item img {
+        width: 110px;
+        height: 110px; } }
+    @media screen and (max-width: 384px) {
+      .carousel-item img {
+        width: 80px;
+        height: 80px; } }
   .carousel-item p {
     color: #212121;
     font: 16px/26px 'Asap';
     font-weight: 400;
     text-transform: uppercase;
     opacity: 0.6; }
+    @media screen and (max-width: 768px) {
+      .carousel-item p {
+        font: 12px/20px 'Asap';
+        text-transform: none;
+        padding-right: 175px; } }
+    @media screen and (max-width: 488px) {
+      .carousel-item p {
+        padding-right: 120px; } }
+    @media screen and (max-width: 384px) {
+      .carousel-item p {
+        font: 10px/18px 'Asap';
+        text-transform: none;
+        padding-right: 100px; } }
     .carousel-item p span {
       font: 12px 'Asap';
       font-weight: 500;
@@ -216,8 +297,11 @@ h2:before {
   height: 150px; }
 
 footer {
-  padding-top: 40px;
+  padding-top: 100px;
   background-image: url("../images/footerbg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #646465; }
   footer h2 {
     color: white;
@@ -268,6 +352,9 @@ footer {
     color: #212121;
     opacity: 0.8;
     margin-top: 6px; }
+  @media screen and (max-width: 1199px) {
+    .social {
+      margin-bottom: 9px; } }
 
 .social:hover {
   background-color: #0985bf;
