@@ -28,7 +28,8 @@ header .nav-item a:after {
 
 header .nav-item a:hover:after {
   background-color: #878787;
-  width: 100%; }
+  width: 100%;
+  transition: 0.2s; }
 
 .imageBgTitle {
   z-index: 1; }
@@ -213,5 +214,79 @@ h2:before {
 
 .empty {
   height: 150px; }
+
+footer {
+  padding-top: 40px;
+  background-image: url("../images/footerbg.jpg");
+  background-color: #646465; }
+  footer h2 {
+    color: white;
+    margin-bottom: 70px; }
+  footer h2:before {
+    background-color: white; }
+  footer .btn-outline-secondary {
+    width: 123px;
+    margin-right: 0;
+    margin-top: 0 !important;
+    box-shadow: none;
+    margin-bottom: 48px; }
+    footer .btn-outline-secondary i {
+      font-size: 16px;
+      color: #212121; }
+  footer .btn-outline-secondary:hover i {
+    color: white;
+    transition: 0.2s; }
+  footer form {
+    font: 16px 'Asap';
+    font-weight: 400;
+    color: #212121;
+    opacity: 0.8; }
+  footer hr {
+    color: white;
+    size: 1px;
+    width: 100%; }
+
+.form-control {
+  margin-bottom: 30px;
+  border-radius: 0;
+  border: none; }
+
+#exampleFormControlInput1, #exampleFormControlInput2 {
+  height: 57px; }
+
+#exampleFormControlTextarea1 {
+  line-height: 57px; }
+
+.social {
+  display: inline-block;
+  margin-right: 9px;
+  width: 27px;
+  height: 27px;
+  background-color: white; }
+  .social i {
+    font-size: 16px;
+    color: #212121;
+    opacity: 0.8;
+    margin-top: 6px; }
+
+.social:hover {
+  background-color: #0985bf;
+  transition: 0.2s; }
+  .social:hover i {
+    color: white; }
+
+.whiteline:before {
+  display: block;
+  width: 100%;
+  height: 1px;
+  content: "";
+  background-color: white;
+  margin-bottom: 30px; }
+
+.footerpar {
+  color: white;
+  font: 16px 'Asap';
+  font-weight: 400;
+  margin-top: 5px; }
 
 /*# sourceMappingURL=style.css.map */
