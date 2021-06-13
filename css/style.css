@@ -297,15 +297,14 @@ h2:before {
   height: 150px; }
 
 footer {
-  padding-top: 100px;
+  padding-top: 70px;
   background-image: url("../images/footerbg.jpg");
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-color: #646465; }
   footer h2 {
     color: white;
-    margin-bottom: 70px; }
+    margin-bottom: 40px; }
   footer h2:before {
     background-color: white; }
   footer .btn-outline-secondary {
@@ -313,7 +312,7 @@ footer {
     margin-right: 0;
     margin-top: 0 !important;
     box-shadow: none;
-    margin-bottom: 48px; }
+    margin-bottom: 28px; }
     footer .btn-outline-secondary i {
       font-size: 16px;
       color: #212121; }
