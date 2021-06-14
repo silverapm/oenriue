@@ -269,7 +269,8 @@ h2:before {
   margin-right: 0; }
 
 .carousel-indicators .active {
-  background-color: black; }
+  background-color: black;
+  width: 13px; }
 
 .happysec {
   padding-top: 70px;
